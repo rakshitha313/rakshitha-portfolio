@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rakshitha B R Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <h2>Rakshitha</h2>
+
+        <ul>
+
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
 
     <!-- HERO SECTION -->
 
@@ -18,7 +39,7 @@
 
         <h1>Rakshitha B R</h1>
 
-        <h2>Python Full Stack Developer</h2>
+        <h2 class="typing"></h2>
 
         <p>
             Passionate about building modern web applications using
@@ -45,7 +66,7 @@
 
     <!-- ABOUT -->
 
-    <section>
+    <section id="about">
 
         <h2>About Me</h2>
 
@@ -64,16 +85,38 @@
 
     <!-- SKILLS -->
 
-    <section>
+    <section id="skills">
 
         <h2>Skills</h2>
 
-        <div class="card">
+        <div class="skills">
 
-            <p>
-                Python | Django | MySQL | HTML | CSS |
-                JavaScript | Bootstrap | GitHub | REST API
-            </p>
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>REST API</span>
+            <span>GitHub</span>
+
+        </div>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+
+    <section>
+
+        <h2>Achievements</h2>
+
+        <div class="skills">
+
+            <span>3+ Projects</span>
+            <span>Python Full Stack</span>
+            <span>Django Developer</span>
+            <span>Internship Completed</span>
 
         </div>
 
@@ -100,6 +143,11 @@
                 and institution-based management.
             </p>
 
+            <p>
+                <strong>Tech Stack:</strong>
+                Django, Python, MySQL, Bootstrap
+            </p>
+
             <a href="https://github.com/rakshitha313/MindExam" target="_blank">
                 View Project
             </a>
@@ -118,6 +166,11 @@
                 and job status management.
             </p>
 
+            <p>
+                <strong>Tech Stack:</strong>
+                Django REST API, React, JWT
+            </p>
+
         </div>
 
         <div class="card">
@@ -127,6 +180,11 @@
             <p>
                 Machine learning project for detecting
                 behavior-based intranet attacks using Python.
+            </p>
+
+            <p>
+                <strong>Tech Stack:</strong>
+                Python, Machine Learning
             </p>
 
         </div>
@@ -144,9 +202,10 @@
             <h3>Web Development Intern</h3>
 
             <p>
-                Worked at Apsis Solutions, Bengaluru as a Web Development Intern.
-                Developed full-stack applications using Django and Python.
-                Worked on frontend-backend integration and real-world project development.
+                Worked at Apsis Solutions, Bengaluru as a
+                Web Development Intern.
+                Developed full-stack applications using
+                Django and Python.
             </p>
 
         </div>
@@ -155,7 +214,7 @@
 
     <!-- CONTACT -->
 
-    <section>
+    <section id="contact">
 
         <h2>Contact</h2>
 
@@ -171,5 +230,41 @@
 
     </section>
 
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Rakshitha B R | Aspiring Python Full Stack Developer
+        </p>
+
+    </footer>
+
+    <!-- TYPING EFFECT -->
+
+    <script>
+
+        const text = "Aspiring Python Full Stack Developer";
+
+        let index = 0;
+
+        function typeEffect() {
+
+            document.querySelector(".typing").textContent =
+                text.slice(0, index);
+
+            index++;
+
+            if (index <= text.length) {
+                setTimeout(typeEffect, 100);
+            }
+
+        }
+
+        typeEffect();
+
+    </script>
+
 </body>
+
 </html>

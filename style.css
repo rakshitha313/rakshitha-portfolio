@@ -257,13 +257,13 @@ section h2{
 /* PROJECT IMAGE */
 
 .project-image{
-    width:100%;
-    border-radius:15px;
-    margin-bottom:20px;
-    max-height:380px;
+    width:48%;
+    height:250px;
     object-fit:cover;
+    border-radius:15px;
+    margin:10px 1%;
+    display:inline-block;
 }
-
 /* CARD BUTTON */
 
 .card a{

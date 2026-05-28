@@ -245,7 +245,15 @@ section h2{
     color:#d1d5db;
     font-size:16px;
 }
+.card ul{
+    margin-top:15px;
+    padding-left:20px;
+}
 
+.card li{
+    margin-top:10px;
+    color:#d1d5db;
+}
 /* PROJECT IMAGE */
 
 .project-image{

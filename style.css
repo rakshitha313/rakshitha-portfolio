@@ -14,34 +14,48 @@ body{
     overflow-x:hidden;
 }
 
+/* PROGRESS BAR */
+
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    background:#60a5fa;
+    width:0%;
+    z-index:9999;
+}
+
 /* NAVBAR */
 
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 10%;
+    padding:18px 10%;
     position:sticky;
     top:0;
-    background:rgba(15,23,42,0.7);
-    backdrop-filter:blur(10px);
+    background:rgba(15,23,42,0.75);
+    backdrop-filter:blur(12px);
     z-index:1000;
 }
 
 nav h2{
-    font-size:28px;
+    font-size:30px;
     color:#60a5fa;
+    font-weight:700;
 }
 
 nav ul{
     display:flex;
-    gap:30px;
+    gap:28px;
     list-style:none;
 }
 
 nav a{
     color:white;
     text-decoration:none;
+    font-size:16px;
     transition:0.3s;
     font-weight:500;
 }
@@ -50,10 +64,10 @@ nav a:hover{
     color:#60a5fa;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero{
-    min-height:100vh;
+    min-height:90vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -63,12 +77,12 @@ nav a:hover{
 }
 
 .profile{
-    width:180px;
-    height:180px;
+    width:170px;
+    height:170px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid #60a5fa;
-    box-shadow:0 0 30px #2563eb;
+    box-shadow:0 0 35px rgba(37,99,235,0.8);
     animation:float 3s ease-in-out infinite;
 }
 
@@ -79,7 +93,7 @@ nav a:hover{
     }
 
     50%{
-        transform:translateY(-15px);
+        transform:translateY(-12px);
     }
 
     100%{
@@ -89,21 +103,24 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:52px;
     margin-top:25px;
+    text-shadow:0 0 20px rgba(96,165,250,0.7);
+    font-weight:700;
 }
 
 .typing{
     color:#60a5fa;
-    margin-top:10px;
-    font-size:30px;
+    margin-top:12px;
+    font-size:26px;
+    font-weight:600;
 }
 
 .hero p{
-    max-width:750px;
-    margin-top:20px;
-    line-height:1.9;
-    font-size:18px;
+    max-width:700px;
+    margin-top:22px;
+    line-height:1.8;
+    font-size:17px;
     color:#d1d5db;
 }
 
@@ -116,7 +133,7 @@ nav a:hover{
 .buttons a{
     display:inline-block;
     margin:10px;
-    padding:14px 28px;
+    padding:13px 28px;
     border-radius:50px;
     text-decoration:none;
     background:linear-gradient(to right,#2563eb,#7c3aed);
@@ -131,15 +148,15 @@ nav a:hover{
     box-shadow:0 0 30px rgba(37,99,235,0.8);
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section{
-    padding:80px 12%;
+    padding:75px 12%;
 }
 
 section h2{
-    font-size:40px;
-    margin-bottom:40px;
+    font-size:38px;
+    margin-bottom:35px;
     text-align:center;
     color:#60a5fa;
 }
@@ -150,15 +167,15 @@ section h2{
     background:rgba(255,255,255,0.08);
     backdrop-filter:blur(12px);
     border:1px solid rgba(255,255,255,0.1);
-    padding:30px;
-    border-radius:20px;
+    padding:28px;
+    border-radius:22px;
     margin-top:30px;
     transition:0.4s;
     animation:fadeUp 1s ease;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
     box-shadow:0 0 25px rgba(96,165,250,0.4);
 }
 
@@ -179,12 +196,13 @@ section h2{
 .card h3{
     color:#93c5fd;
     margin-bottom:15px;
-    font-size:28px;
+    font-size:25px;
 }
 
 .card p{
-    line-height:1.9;
+    line-height:1.8;
     color:#d1d5db;
+    font-size:16px;
 }
 
 /* PROJECT IMAGE */
@@ -193,7 +211,7 @@ section h2{
     width:100%;
     border-radius:15px;
     margin-bottom:20px;
-    max-height:400px;
+    max-height:380px;
     object-fit:cover;
 }
 
@@ -202,7 +220,7 @@ section h2{
 .card a{
     display:inline-block;
     margin-top:20px;
-    padding:12px 24px;
+    padding:11px 24px;
     border-radius:40px;
     text-decoration:none;
     background:linear-gradient(to right,#2563eb,#7c3aed);
@@ -219,7 +237,7 @@ section h2{
 .skills{
     display:flex;
     flex-wrap:wrap;
-    gap:20px;
+    gap:18px;
     justify-content:center;
 }
 
@@ -227,24 +245,26 @@ section h2{
     background:rgba(255,255,255,0.08);
     border:1px solid rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
-    padding:14px 24px;
+    padding:12px 22px;
     border-radius:40px;
     transition:0.3s;
+    font-size:15px;
 }
 
 .skills span:hover{
     background:#2563eb;
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 }
 
 /* FOOTER */
 
 footer{
     text-align:center;
-    padding:30px;
+    padding:28px;
     background:rgba(2,6,23,0.9);
     margin-top:60px;
     color:#94a3b8;
+    font-size:15px;
 }
 
 /* MOBILE */
@@ -253,24 +273,48 @@ footer{
 
     nav{
         flex-direction:column;
-        gap:20px;
+        gap:18px;
+        padding:18px 5%;
     }
 
     nav ul{
         flex-wrap:wrap;
         justify-content:center;
+        gap:18px;
+    }
+
+    .hero{
+        min-height:85vh;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
     }
 
     .hero h1{
-        font-size:40px;
+        font-size:34px;
     }
 
     .typing{
-        font-size:22px;
+        font-size:18px;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.7;
     }
 
     section{
         padding:60px 8%;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    .card h3{
+        font-size:22px;
     }
 
 }

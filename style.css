@@ -264,6 +264,13 @@ section h2{
     margin:10px 1%;
     display:inline-block;
 }
+.project-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    margin-bottom:20px;
+}
 /* CARD BUTTON */
 
 .card a{
